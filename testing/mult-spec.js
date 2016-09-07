@@ -6,7 +6,7 @@ const should = chai.should();
 const api = supertest(app);
 
 
-describe('Sending a post to /api/sub',()=>{
+describe('Sending a post to /api/mult',()=>{
   describe('Should succeed ', ()=>{
     it('in subtracting two number ',(done)=>{
       api.post('/api/mult')
