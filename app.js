@@ -32,6 +32,9 @@ app.post('/api/add',(req,res,next)=>{
 app.post('/api/sub',(req,res,next)=>{
   res.json({result:req.body.num1 - req.body.num2})
 })
+app.post('/api/mult',(req,res,next)=>{
+  res.json({result:req.body.num1 * req.body.num2})
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
