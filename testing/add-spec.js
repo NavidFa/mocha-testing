@@ -11,13 +11,13 @@ describe('Sending a post to /api/add',()=>{
     it('in adding two number together',(done)=>{
       api.post('/api/add')
       .send({
-        num1: 5,
+        num1: 6,
         num2: 2
       })
       .expect(200)
       .end((err,res)=>{
         if(err) return done(err);
-        res.body.result.should.be.equal(7);
+        res.body.result.should.be.equal(8);
         done();
       })
     })
