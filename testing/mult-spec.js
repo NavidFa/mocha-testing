@@ -8,7 +8,7 @@ const api = supertest(app);
 
 describe('Sending a post to /api/mult',()=>{
   describe('Should succeed ', ()=>{
-    it('in subtracting two number ',(done)=>{
+    it('in multiply two number ',(done)=>{
       api.post('/api/mult')
       .send({
         num1: 5,
